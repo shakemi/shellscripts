@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASEDIR=$(dirname $0)
-CONFIG_FILE=${0//sh/conf}
+CONFIG_FILE=${0//.sh/.conf}
 
 COOKIE=$BASEDIR/cookie_$$.txt
 HEADER_DUMP=$BASEDIR/header_$$.dump
